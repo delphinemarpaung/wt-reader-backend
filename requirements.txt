@@ -1,0 +1,26 @@
+# Web Framework
+flask==2.2.5
+flask-restful==0.3.10
+flask-cors==4.0.1
+
+# Text Processing
+jieba==0.42.1
+pinyin==0.4.0
+hanziconv==0.3.2
+beautifulsoup4==4.9.3
+lxml==5.2.1
+
+# Chinese Language Processing
+cihai==0.33.0
+
+# Machine Learning/NLP
+transformers==4.41.0
+torch==2.0.1
+
+# Image Processing for macOs
+Pillow  # for PIL/Image (macOS only)
+objc  # for macOS Vision framework integration (macOS only)
+Vision  # Apple's Vision framework (macOS only)
+
+# Image Processing for other OS
+pytesseract==0.3.10   # If not using Apple's Vision framework
