@@ -28,7 +28,7 @@ def batch_process_images():
     engine = pyttsx3.init()
     for img_id, image_filename in enumerate(image_tag_filenames):
         print("image file {} / {}".format(img_id + 1, len(image_tag_filenames)))
-        filepath = "../resource/images/{}/{}".format(chapter_name, image_filename)
+        filepath = "../resource/images/{}_files/{}".format(chapter_name, image_filename)
         if os.path.isfile(filepath):
             # get text
             texts = get_text_from_image(filepath)

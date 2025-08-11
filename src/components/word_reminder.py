@@ -56,7 +56,7 @@ class WordReminder:
         word2imgidx_dct = {}
         image_texts, image_pinyins = [], []
         for i, filename in enumerate(image_filenames):
-            filepath = "../resource/images/chapter{}/{}".format(CHAPTER, filename)
+            filepath = "../resource/images/chapter{}_files/{}".format(CHAPTER, filename)
             image_details = image_dct.get(filepath, {})
             texts = image_details.get('text', [])
             pinyins = image_details.get('text_pinyin', [])

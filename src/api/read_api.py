@@ -22,7 +22,7 @@ class ReadApiHandler(Resource):
 
         # get list of texts
         for filename in image_tag_filenames:
-            filepath = "../resource/images/{}/{}".format(CHAPTER_NAME, filename)
+            filepath = "../resource/images/{}_files/{}".format(CHAPTER_NAME, filename)
             if os.path.isfile(filepath):
                 self.image_filenames.append(filename)
                 image_details = image_dct.get(filepath, {})
